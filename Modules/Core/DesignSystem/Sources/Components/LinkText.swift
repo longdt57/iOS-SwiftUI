@@ -7,9 +7,14 @@
 
 import SwiftUI
 
-struct LinkText: View {
+public struct LinkText: View {
     var url: String
-    var body: some View {
+
+    public init(url: String) {
+        self.url = url
+    }
+
+    public var body: some View {
         Text(url)
             .foregroundColor(.blue)
             .underline()

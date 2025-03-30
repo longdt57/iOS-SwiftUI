@@ -7,12 +7,16 @@
 
 import SwiftUI
 
-struct UserAvatar: View {
+public struct UserAvatar: View {
 
     var avatarUrl: String?
 
-    var body: some View {
-        AsyncImage(url: URL(string: avatarUrl.orEmpty())) { phase in
+    public init(avatarUrl: String? = nil) {
+        self.avatarUrl = avatarUrl
+    }
+
+    public var body: some View {
+        AsyncImage(url: URL(string: avatarUrl ?? "")) { phase in
             switch phase {
             case let .success(image):
                 image.resizable()

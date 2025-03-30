@@ -46,6 +46,13 @@ target 'GitUser' do
   end
 end
 
+target 'DesignSystem' do
+  
+  target 'DesignSystemTests' do
+    testing_pods
+  end
+end
+
 def data_dependencies
   pod 'Alamofire'
   pod 'RealmSwift'

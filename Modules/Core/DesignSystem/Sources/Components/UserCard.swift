@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct UserCard<Content: View>: View {
+public struct UserCard<Content: View>: View {
 
-    init(@ViewBuilder content: () -> Content) {
+    public init(@ViewBuilder content: () -> Content) {
         self.content = content()
     }
 
     let content: Content
 
-    var body: some View {
+    public var body: some View {
         ZStack {
             // Background
             RoundedRectangle(cornerRadius: 8)
