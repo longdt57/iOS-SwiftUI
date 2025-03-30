@@ -8,34 +8,24 @@ on:
 
 jobs:
   build:
-    name: Build and Test default scheme using any available iPhone simulator
     runs-on: macos-latest
-
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
-      - name: Set Default Scheme
-        run: |
-          scheme_list=$(xcodebuild -list -json | tr -d "\n")
-          default=$(echo $scheme_list | ruby -e "require 'json'; puts JSON.parse(STDIN.gets)['project']['targets'][0]")
-          echo $default | cat >default
-          echo Using default scheme: $default
-      - name: Set up Ruby and Gems
+
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.0' # or your desired Ruby version
-          bundler-cache: true # Improves performance
+          ruby-version: 3.1
 
-      - name: Install Pods
-        run: |
-          gem install cocoapods
-          pod repo update
-          pod install --repo-update
-        
+      - name: Install Bundler
+        run: gem install bundler
+
+      - name: Install CocoaPods
+        run: bundle install && bundle exec pod install --repo-update
+
+      - name: Select Xcode version
+        run: sudo xcode-select -s /Applications/Xcode.app
+
       - name: Build and Test
-        run: |
-          xcodebuild clean test \
-            -workspace GitUser.xcworkspace \
-            -scheme GitUser \
-            -destination 'platform=iOS Simulator,name=iPhone 15' \
-            CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
+        run: xcodebuild clean test -workspace GitUser.xcworkspace -scheme GitUser -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO
