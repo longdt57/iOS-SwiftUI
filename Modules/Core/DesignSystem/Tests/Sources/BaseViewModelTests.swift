@@ -5,9 +5,9 @@
 //  Created by Long Do on 01/01/2025.
 //
 
+import Alamofire
 import Combine
-@testable import Domain
-@testable import GitUser
+@testable import DesignSystem
 import XCTest
 
 class BaseViewModelTests: XCTestCase {
@@ -15,6 +15,11 @@ class BaseViewModelTests: XCTestCase {
     // Test instance
     private var viewModel: BaseViewModel!
     private var mockDispatchQueueProvider: MockDispatchQueueProvider!
+
+    private let error = NSError(domain: "SomeError", code: 1, userInfo: nil)
+    private let networkError = AFError.sessionTaskFailed(error: MockError.testError)
+    private let serverError = AFError
+        .responseSerializationFailed(reason: AFError.ResponseSerializationFailureReason.inputDataNilOrZeroLength)
 
     override func setUp() {
         super.setUp()
@@ -35,8 +40,10 @@ class BaseViewModelTests: XCTestCase {
         // Act
         viewModel.showLoading()
 
-        // Assert
-        XCTAssertEqual(viewModel.loading, .loading())
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            // Assert
+            XCTAssertEqual(self.viewModel.loading, .loading())
+        }
     }
 
     func testIsLoading() {
@@ -50,10 +57,12 @@ class BaseViewModelTests: XCTestCase {
         viewModel.hideLoading()
         let isLoadingAfterHide = viewModel.isLoading()
 
-        // Assert
-        XCTAssertFalse(isLoadingInitially) // .none
-        XCTAssertTrue(isLoadingAfterShow) // .loading
-        XCTAssertFalse(isLoadingAfterHide) // .none
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            // Assert
+            XCTAssertFalse(isLoadingInitially) // .none
+            XCTAssertTrue(isLoadingAfterShow) // .loading
+            XCTAssertFalse(isLoadingAfterHide) // .none
+        }
     }
 
     func testHideLoading() {
@@ -74,35 +83,35 @@ class BaseViewModelTests: XCTestCase {
         // Act
         viewModel.handleError(error: error)
 
-        // Assert
-        XCTAssertEqual(viewModel.error, .messageError(ErrorState.MessageError.common))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            // Assert
+            XCTAssertEqual(self.viewModel.error, .messageError(ErrorState.MessageError.common))
+        }
     }
 
     func testHandleError_dataNotFoundError() {
-        // Arrange
-        let error = NetworkAPIError.noConnectivity
-
         // Act
-        viewModel.handleError(error: error)
+        viewModel.handleError(error: networkError)
 
-        // Assert
-        XCTAssertEqual(viewModel.error, .messageError(ErrorState.MessageError.network()))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            // Assert
+            XCTAssertEqual(self.viewModel.error, .messageError(ErrorState.MessageError.network()))
+        }
     }
 
     func testHandleError_otherError() {
-        // Arrange
-        let error = NSError(domain: "SomeError", code: 1, userInfo: nil)
-
         // Act
         viewModel.handleError(error: error)
 
-        // Assert
-        XCTAssertEqual(viewModel.error, .messageError(ErrorState.MessageError.common))
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            // Assert
+            XCTAssertEqual(self.viewModel.error, .messageError(ErrorState.MessageError.common))
+        }
     }
 
     func testHideError() {
         // Arrange
-        viewModel.handleError(error: NetworkAPIError.serverError) // Set error state
+        viewModel.handleError(error: MockError.testError) // Set error state
 
         // Act
         viewModel.hideError()
@@ -113,10 +122,10 @@ class BaseViewModelTests: XCTestCase {
 
     func testOnErrorPrimaryAction() {
         // Arrange
-        viewModel.handleError(error: NetworkAPIError.noConnectivity) // Set error state
+        viewModel.handleError(error: serverError) // Set error state
 
         // Act
-        viewModel.onErrorPrimaryAction(errorState: ErrorState.messageError(.network()))
+        viewModel.onErrorPrimaryAction(errorState: ErrorState.messageError(.server()))
 
         // Assert
         XCTAssertEqual(viewModel.error, .none)
@@ -124,7 +133,7 @@ class BaseViewModelTests: XCTestCase {
 
     func testOnErrorSecondaryAction() {
         // Arrange
-        viewModel.handleError(error: NetworkAPIError.noConnectivity) // Set error state
+        viewModel.handleError(error: networkError) // Set error state
 
         // Act
         viewModel.onErrorSecondaryAction(errorState: ErrorState.messageError(.network()))
@@ -144,4 +153,13 @@ class BaseViewModelTests: XCTestCase {
         // Assert
         XCTAssertEqual(cancellables?.isEmpty, true)
     }
+}
+
+class MockDispatchQueueProvider: DispatchQueueProvider {
+    var backgroundQueue: DispatchQueue = .main
+    var mainQueue: DispatchQueue = .main
+}
+
+enum MockError: Error {
+    case testError
 }

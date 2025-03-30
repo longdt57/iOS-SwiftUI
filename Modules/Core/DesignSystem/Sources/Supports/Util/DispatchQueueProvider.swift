@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol DispatchQueueProvider {
+public protocol DispatchQueueProvider {
     var backgroundQueue: DispatchQueue { get }
     var mainQueue: DispatchQueue { get }
 }

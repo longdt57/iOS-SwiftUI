@@ -7,12 +7,15 @@
 
 import Foundation
 
-class DefaultDispatchQueueProvider: DispatchQueueProvider {
-    var backgroundQueue: DispatchQueue {
+public class DefaultDispatchQueueProvider: DispatchQueueProvider {
+
+    public init() {}
+
+    public var backgroundQueue: DispatchQueue {
         DispatchQueue.global(qos: .userInitiated) // Background queue for tasks
     }
 
-    var mainQueue: DispatchQueue {
+    public var mainQueue: DispatchQueue {
         DispatchQueue.main // Main queue for UI updates
     }
 }

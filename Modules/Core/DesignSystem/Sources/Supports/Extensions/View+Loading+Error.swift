@@ -10,7 +10,7 @@ import SwiftUI
 
 extension View {
 
-    func showLoading(loadingState: Binding<LoadingState>) -> some View {
+    public func showLoading(loadingState: Binding<LoadingState>) -> some View {
         let isPresenting = Binding(
             get: {
                 if case .loading = loadingState.wrappedValue { return true } else { return false }
@@ -25,7 +25,7 @@ extension View {
         }
     }
 
-    func showError(
+    public func showError(
         error: Binding<ErrorState>,
         primaryAction: @escaping ((ErrorState) -> Void),
         secondaryAction: @escaping ((ErrorState) -> Void)

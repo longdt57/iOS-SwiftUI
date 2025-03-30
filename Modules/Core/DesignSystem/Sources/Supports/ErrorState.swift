@@ -7,17 +7,17 @@
 
 import Foundation
 
-enum ErrorState: Equatable {
+public enum ErrorState: Equatable {
     case none
     case messageError(MessageError)
 
-    struct MessageError: Equatable {
-        let errorCode: Int?
-        let iconRes: Int?
-        let title: String
-        let message: String
-        let primaryButton: String
-        let secondaryButton: String?
+    public struct MessageError: Equatable {
+        public let errorCode: Int?
+        public let iconRes: Int?
+        public let title: String
+        public let message: String
+        public let primaryButton: String
+        public let secondaryButton: String?
 
         static let common = MessageError(
             errorCode: nil,

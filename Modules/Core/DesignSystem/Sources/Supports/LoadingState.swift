@@ -7,14 +7,14 @@
 
 import Foundation
 
-enum LoadingState: Equatable {
+public enum LoadingState: Equatable {
     case none
-    case loading(message: String = R.string.localizable.loading())
+    case loading(message: String = "")
 }
 
 extension LoadingState {
     // Computed property to get the message from the LoadingState
-    var message: String? {
+    public var message: String? {
         switch self {
         case .none:
             return nil

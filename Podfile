@@ -47,6 +47,10 @@ target 'GitUser' do
 end
 
 target 'DesignSystem' do
+  # Toast
+  pod 'AlertToast'
+  pod 'R.swift'
+  pod 'Alamofire'
   
   target 'DesignSystemTests' do
     testing_pods

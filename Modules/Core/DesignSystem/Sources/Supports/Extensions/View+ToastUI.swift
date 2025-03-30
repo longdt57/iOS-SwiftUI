@@ -10,7 +10,7 @@ import SwiftUI
 
 extension View {
 
-    func showToast(isPresenting: Binding<Bool>, message: String) -> some View {
+    public func showToast(isPresenting: Binding<Bool>, message: String) -> some View {
         toast(isPresenting: isPresenting) {
             AlertToast(type: .regular, subTitle: message)
         }
