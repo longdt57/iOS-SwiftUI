@@ -57,6 +57,16 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D102D5EB2D9941BB00FE5A50"
+               BuildableName = "DesignSystemTests.xctest"
+               BlueprintName = "DesignSystemTests"
+               ReferencedContainer = "container:GitUser.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "6C551DE24DC5FC9AA481AADC"
                BuildableName = "DomainTests.xctest"
                BlueprintName = "DomainTests"
