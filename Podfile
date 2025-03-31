@@ -71,9 +71,11 @@ target 'Data' do
   end
 end
 
-target 'Domain' do
-  
-  target 'DomainTests' do
+target 'GitUserSample' do
+  data_dependencies
+
+  target 'GitUserSampleTests' do
+    data_dependencies
     testing_pods
   end
 end

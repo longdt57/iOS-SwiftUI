@@ -7,8 +7,8 @@
 
 import Combine
 import DesignSystem
-import Domain
 import Foundation
+import GitUserSample
 
 class GitUserDetailViewModel: BaseViewModel {
 

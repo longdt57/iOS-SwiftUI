@@ -5,8 +5,8 @@
 //  Created by Long Do on 31/12/2024.
 //
 
-import Domain
 import Foundation
+import GitUserSample
 
 protocol GitUserDetailUiMapper {
     func mapToUiModel(oldUiModel: GitUserDetailUiModel, model: GitUserDetailModel) -> GitUserDetailUiModel

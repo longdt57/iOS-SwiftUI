@@ -1,8 +1,8 @@
 //
 //  MockUtil.swift
-//  GitUserTests
+//  DataTests
 //
-//  Created by Long Do on 02/01/2025.
+//  Created by Long Do on 01/01/2025.
 //
 
 import Foundation

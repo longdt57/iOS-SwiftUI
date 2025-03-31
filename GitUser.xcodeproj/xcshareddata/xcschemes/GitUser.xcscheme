@@ -20,6 +20,20 @@
                ReferencedContainer = "container:GitUser.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D102D6E42D99B27F00FE5A50"
+               BuildableName = "GitUserSampleTests.xctest"
+               BlueprintName = "GitUserSampleTests"
+               ReferencedContainer = "container:GitUser.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
@@ -67,16 +81,6 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6C551DE24DC5FC9AA481AADC"
-               BuildableName = "DomainTests.xctest"
-               BlueprintName = "DomainTests"
-               ReferencedContainer = "container:GitUser.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
                BlueprintIdentifier = "9806E73F85C272986AC6BE5E"
                BuildableName = "DataTests.xctest"
                BlueprintName = "DataTests"
@@ -90,6 +94,16 @@
                BlueprintIdentifier = "FC2F8BE78DDCE74F3AB6A446"
                BuildableName = "GitUserTests.xctest"
                BlueprintName = "GitUserTests"
+               ReferencedContainer = "container:GitUser.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D102D6E42D99B27F00FE5A50"
+               BuildableName = "GitUserSampleTests.xctest"
+               BlueprintName = "GitUserSampleTests"
                ReferencedContainer = "container:GitUser.xcodeproj">
             </BuildableReference>
          </TestableReference>

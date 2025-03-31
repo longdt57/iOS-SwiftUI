@@ -5,7 +5,7 @@
 //  Created by Long Do on 31/12/2024.
 //
 
-import Domain
+import GitUserSample
 import Resolver
 import SwiftUI
 

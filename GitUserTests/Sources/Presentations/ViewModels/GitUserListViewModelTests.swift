@@ -7,8 +7,8 @@
 
 import Combine
 @testable import DesignSystem
-@testable import Domain
 @testable import GitUser
+@testable import GitUserSample
 import XCTest
 
 class GitUserListViewModelTests: AppXCTestCase {

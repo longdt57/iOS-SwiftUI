@@ -6,8 +6,8 @@
 //
 
 import Combine
-@testable import Domain
 @testable import GitUser
+@testable import GitUserSample
 import XCTest
 
 final class GitUserDetailViewModelTests: AppXCTestCase {
