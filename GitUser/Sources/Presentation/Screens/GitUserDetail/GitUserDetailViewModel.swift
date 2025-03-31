@@ -6,8 +6,9 @@
 //
 
 import Combine
-import Domain
+import DesignSystem
 import Foundation
+import GitUserSample
 
 class GitUserDetailViewModel: BaseViewModel {
 

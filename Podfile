@@ -46,6 +46,17 @@ target 'GitUser' do
   end
 end
 
+target 'DesignSystem' do
+  # Toast
+  pod 'AlertToast'
+  pod 'R.swift'
+  pod 'Alamofire'
+  
+  target 'DesignSystemTests' do
+    testing_pods
+  end
+end
+
 def data_dependencies
   pod 'Alamofire'
   pod 'RealmSwift'
@@ -60,9 +71,11 @@ target 'Data' do
   end
 end
 
-target 'Domain' do
-  
-  target 'DomainTests' do
+target 'GitUserSample' do
+  data_dependencies
+
+  target 'GitUserSampleTests' do
+    data_dependencies
     testing_pods
   end
 end

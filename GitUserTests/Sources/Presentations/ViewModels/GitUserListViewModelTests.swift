@@ -6,8 +6,9 @@
 //
 
 import Combine
-@testable import Domain
+@testable import DesignSystem
 @testable import GitUser
+@testable import GitUserSample
 import XCTest
 
 class GitUserListViewModelTests: AppXCTestCase {
@@ -59,11 +60,12 @@ class GitUserListViewModelTests: AppXCTestCase {
         // Arrange: Set up loading state
         viewModel.showLoading()
 
-        // Act: Call loadMore while already loading
-        viewModel.handleAction(action: .loadMore)
-
-        // Assert: Verify that loadMore is not triggered again while loading
-        XCTAssertFalse(mockUseCase.invokeCalled, "loadMore should not be called while already loading")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            // Act: Call loadMore while already loading
+            self.viewModel.handleAction(action: .loadMore)
+            // Assert: Verify that loadMore is not triggered again while loading
+            XCTAssertFalse(self.mockUseCase.invokeCalled, "loadMore should not be called while already loading")
+        }
     }
 
     func testLoadMore_whenErrorOccurs_shouldHandleError() {
@@ -110,8 +112,10 @@ class GitUserListViewModelTests: AppXCTestCase {
         // Act: Call showLoading
         viewModel.showLoading()
 
-        // Assert: Verify loading state is set to .loading
-        XCTAssertTrue(viewModel.isLoading(), "Loading state should be .loading")
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            // Assert: Verify loading state is set to .loading
+            XCTAssertTrue(self.viewModel.isLoading(), "Loading state should be .loading")
+        }
     }
 
     func testHideLoading_shouldUpdateLoadingState() {

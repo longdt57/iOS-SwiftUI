@@ -5,8 +5,8 @@
 //  Created by Long Do on 01/01/2025.
 //
 
+@testable import DesignSystem
 import Foundation
-@testable import GitUser
 
 class MockDispatchQueueProvider: DispatchQueueProvider {
     var backgroundQueue: DispatchQueue = .main

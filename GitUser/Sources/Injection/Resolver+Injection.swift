@@ -6,8 +6,9 @@
 //
 
 import Data
-import Domain
+import DesignSystem
 import Foundation
+import GitUserSample
 import Resolver
 
 extension Resolver: ResolverRegistering {

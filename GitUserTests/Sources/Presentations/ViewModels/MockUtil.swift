@@ -5,8 +5,8 @@
 //  Created by Long Do on 02/01/2025.
 //
 
-@testable import Domain
 import Foundation
+@testable import GitUserSample
 
 public enum MockUtil {
     public static let login = "longdt57"

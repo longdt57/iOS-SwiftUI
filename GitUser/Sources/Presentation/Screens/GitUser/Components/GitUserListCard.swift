@@ -5,7 +5,8 @@
 //  Created by Long Do on 31/12/2024.
 //
 
-import Domain
+import DesignSystem
+import GitUserSample
 import SwiftUI
 
 struct GitUserListCard: View {
