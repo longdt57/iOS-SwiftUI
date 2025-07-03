@@ -77,7 +77,7 @@ target 'GitUserSample' do
   pod 'Resolver'
 
   target 'GitUserSampleTests' do
-    data_dependencies
+    inherit! :search_paths
     testing_pods
   end
 end
