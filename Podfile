@@ -79,6 +79,9 @@ target 'GitUserSample' do
   target 'GitUserSampleTests' do
     inherit! :search_paths
     testing_pods
+    pod 'AlertToast'
+    pod 'R.swift'
+    pod 'Resolver'
   end
 end
 
