@@ -10,7 +10,7 @@ import Resolver
 import SwiftUI
 
 public struct GitUserListScreen: View {
-    
+
     public init() {}
 
     @StateObject var viewModel: GitUserListViewModel = Resolver.resolve()

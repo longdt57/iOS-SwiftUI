@@ -7,8 +7,8 @@
 
 import Data
 import DesignSystem
-import GitUserSample
 import Foundation
+import GitUserSample
 import Resolver
 
 extension Resolver: ResolverRegistering {

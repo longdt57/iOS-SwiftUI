@@ -18,12 +18,12 @@ extension Resolver {
         registerMappers()
         registerViewModel()
     }
-    
+
     private static func registerLocalSource() {
         register(GitUserLocalSource.self) { GitUserLocalSourceImpl() }
         register(GitUserDetailLocalSource.self) { GitUserDetailLocalSourceImpl() }
     }
-    
+
     private static func registerRepositories() {
         register(GitUserRepository.self) { GitUserRepositoryImpl(networkAPI: resolve(), gitUserLocalSource: resolve()) }
         register(GitUserDetailRepository.self) {
@@ -33,13 +33,13 @@ extension Resolver {
             )
         }
     }
-    
+
     private static func registerUseCases() {
         register(GetGitUserUseCase.self) { GetGitUserUseCase(repository: resolve()) }
         register(GetGitUserDetailRemoteUseCase.self) { GetGitUserDetailRemoteUseCase(repository: resolve()) }
         register(GetGitUserDetailLocalUseCase.self) { GetGitUserDetailLocalUseCase(repository: resolve()) }
     }
-    
+
     private static func registerViewModel() {
         register(GitUserListViewModel.self) {
             GitUserListViewModel(useCase: resolve(), dispatchQueueProvider: resolve())
@@ -53,7 +53,7 @@ extension Resolver {
             )
         }
     }
-    
+
     private static func registerMappers() {
         register(GitUserDetailUiMapper.self) { GitUserDetailUiMapperImpl() }
     }
