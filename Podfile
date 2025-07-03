@@ -73,6 +73,8 @@ end
 
 target 'GitUserSample' do
   data_dependencies
+  pod 'R.swift'
+  pod 'Resolver'
 
   target 'GitUserSampleTests' do
     data_dependencies
