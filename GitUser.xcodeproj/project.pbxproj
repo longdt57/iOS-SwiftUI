@@ -106,6 +106,7 @@
 		D1DD03322E16E5BC00148CE6 /* FollowerFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD03272E16E5BC00148CE6 /* FollowerFormatterTests.swift */; };
 		D1DD03332E16E5BC00148CE6 /* MockDispatchQueueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD032B2E16E5BC00148CE6 /* MockDispatchQueueProvider.swift */; };
 		D1DD03352E16E5BC00148CE6 /* GitUserDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD03292E16E5BC00148CE6 /* GitUserDetailViewModelTests.swift */; };
+		D1DD033A2E16F21D00148CE6 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD03392E16F1D600148CE6 /* SampleTests.swift */; };
 		D1E30CA92D9ACE5000AC7872 /* DesignSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1E30CA82D9ACE5000AC7872 /* DesignSystem.plist */; };
 		D1E30CAB2D9ACE5600AC7872 /* DesignSystemTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1E30CAA2D9ACE5600AC7872 /* DesignSystemTests.plist */; };
 		D1E30CAD2D9ACE5D00AC7872 /* GitUserSample.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1E30CAC2D9ACE5D00AC7872 /* GitUserSample.plist */; };
@@ -404,6 +405,7 @@
 		D1DD03292E16E5BC00148CE6 /* GitUserDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserDetailViewModelTests.swift; sourceTree = "<group>"; };
 		D1DD032A2E16E5BC00148CE6 /* GitUserListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserListViewModelTests.swift; sourceTree = "<group>"; };
 		D1DD032B2E16E5BC00148CE6 /* MockDispatchQueueProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDispatchQueueProvider.swift; sourceTree = "<group>"; };
+		D1DD03392E16F1D600148CE6 /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
 		D1E30CA82D9ACE5000AC7872 /* DesignSystem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DesignSystem.plist; sourceTree = "<group>"; };
 		D1E30CAA2D9ACE5600AC7872 /* DesignSystemTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DesignSystemTests.plist; sourceTree = "<group>"; };
 		D1E30CAC2D9ACE5D00AC7872 /* GitUserSample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GitUserSample.plist; sourceTree = "<group>"; };
@@ -815,6 +817,7 @@
 		7571FE74299F54A705547DB1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D1DD03392E16F1D600148CE6 /* SampleTests.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -2217,6 +2220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1DD033A2E16F21D00148CE6 /* SampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
