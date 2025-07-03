@@ -73,10 +73,15 @@ end
 
 target 'GitUserSample' do
   data_dependencies
+  pod 'R.swift'
+  pod 'Resolver'
 
   target 'GitUserSampleTests' do
-    data_dependencies
+    inherit! :search_paths
     testing_pods
+    pod 'AlertToast'
+    pod 'R.swift'
+    pod 'Resolver'
   end
 end
 

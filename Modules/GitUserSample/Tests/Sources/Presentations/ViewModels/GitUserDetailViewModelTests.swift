@@ -6,7 +6,6 @@
 //
 
 import Combine
-@testable import GitUser
 @testable import GitUserSample
 import XCTest
 

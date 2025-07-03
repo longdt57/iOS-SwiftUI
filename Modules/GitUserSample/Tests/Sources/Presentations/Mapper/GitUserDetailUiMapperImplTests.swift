@@ -5,7 +5,6 @@
 //  Created by Long Do on 02/01/2025.
 //
 
-@testable import GitUser
 @testable import GitUserSample
 import XCTest
 

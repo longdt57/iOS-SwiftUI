@@ -9,11 +9,13 @@ import GitUserSample
 import Resolver
 import SwiftUI
 
-struct GitUserListScreen: View {
+public struct GitUserListScreen: View {
+
+    public init() {}
 
     @StateObject var viewModel: GitUserListViewModel = Resolver.resolve()
 
-    var body: some View {
+    public var body: some View {
         NavigationView {
             VStack {
                 if viewModel.uiModel.users.isEmpty.not() {
