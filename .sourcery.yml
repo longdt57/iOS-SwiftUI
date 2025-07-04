@@ -1,9 +1,9 @@
 sources:
-  - GitUser/Sources
+  - iOSApp/Sources
 templates:
   - tools/sourcery/templates
 output:
-  GitUserTests/Sources/Mocks/Sourcery 
+  iOSAppTests/Sources/Mocks/Sourcery 
 args:
   autoMockableTestableImports:
-    - GitUser
+    - iOSApp

@@ -1,6 +1,6 @@
 //
 //  AppXCTestCase.swift
-//  GitUserTests
+//  iOSAppTests
 //
 //  Created by Long Do on 01/01/2025.
 //

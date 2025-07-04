@@ -8,7 +8,7 @@ def testing_pods
   pod 'OHHTTPStubs/Swift', :configurations => ['Debug Staging', 'Debug Production']
 end
 
-target 'GitUser' do
+target 'iOSApp' do
   # UI
   pod 'Kingfisher'
 
@@ -34,12 +34,12 @@ target 'GitUser' do
   pod 'Wormholy', :configurations => ['Debug Staging', 'Debug Production']
   pod 'xcbeautify'
 
-  target 'GitUserTests' do
+  target 'iOSAppTests' do
     inherit! :search_paths
     testing_pods
   end
 
-  target 'GitUserKIFUITests' do
+  target 'iOSAppKIFUITests' do
     testing_pods
     pod 'KIF', :configurations => ['Debug Staging', 'Debug Production']
     pod 'KIF/IdentifierTests', :configurations => ['Debug Staging', 'Debug Production']
