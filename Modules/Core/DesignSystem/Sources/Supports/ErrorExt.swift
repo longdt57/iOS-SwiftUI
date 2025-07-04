@@ -1,6 +1,6 @@
 //
 //  ErrorExt.swift
-//  GitUser
+//  iOSApp
 //
 //  Created by long.do@compass.com on 30/3/25.
 //

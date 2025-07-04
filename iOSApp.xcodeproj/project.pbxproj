@@ -70,6 +70,7 @@
 		D102D7022D99B31600FE5A50 /* GitUserSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D102D6E22D99B27600FE5A50 /* GitUserSample.framework */; platformFilter = ios; };
 		D102D7072D99B32000FE5A50 /* GitUserSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D102D6E22D99B27600FE5A50 /* GitUserSample.framework */; };
 		D102D7082D99B32000FE5A50 /* GitUserSample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D102D6E22D99B27600FE5A50 /* GitUserSample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D104DBD42E182B5F007D9A7A /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D104DBD32E182B5C007D9A7A /* SampleTests.swift */; };
 		D1328D362D99B6E40048AD2E /* Data.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD0D5F9A6753827C2074981 /* Data.framework */; platformFilter = ios; };
 		D18192752D243F86003103D1 /* Resolver+Injection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18192732D243F86003103D1 /* Resolver+Injection.swift */; };
 		D1DD02DA2E16D0FC00148CE6 /* GitUserDetailUiModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD02D32E16D0FC00148CE6 /* GitUserDetailUiModel.swift */; };
@@ -105,7 +106,6 @@
 		D1DD03322E16E5BC00148CE6 /* FollowerFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD03272E16E5BC00148CE6 /* FollowerFormatterTests.swift */; };
 		D1DD03332E16E5BC00148CE6 /* MockDispatchQueueProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD032B2E16E5BC00148CE6 /* MockDispatchQueueProvider.swift */; };
 		D1DD03352E16E5BC00148CE6 /* GitUserDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD03292E16E5BC00148CE6 /* GitUserDetailViewModelTests.swift */; };
-		D1DD033A2E16F21D00148CE6 /* SampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1DD03392E16F1D600148CE6 /* SampleTests.swift */; };
 		D1E30CA92D9ACE5000AC7872 /* DesignSystem.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1E30CA82D9ACE5000AC7872 /* DesignSystem.plist */; };
 		D1E30CAB2D9ACE5600AC7872 /* DesignSystemTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1E30CAA2D9ACE5600AC7872 /* DesignSystemTests.plist */; };
 		D1E30CAD2D9ACE5D00AC7872 /* GitUserSample.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1E30CAC2D9ACE5D00AC7872 /* GitUserSample.plist */; };
@@ -328,6 +328,7 @@
 		D102D6552D9999C900FE5A50 /* ErrorExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorExt.swift; sourceTree = "<group>"; };
 		D102D6E22D99B27600FE5A50 /* GitUserSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = GitUserSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D102D7002D99B27F00FE5A50 /* GitUserSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitUserSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D104DBD32E182B5C007D9A7A /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
 		D13A781F2D264EDD00882BF5 /* GitUserLocalSourceImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserLocalSourceImplTests.swift; sourceTree = "<group>"; };
 		D13A78232D26518400882BF5 /* GitUserDetailLocalSourceImplTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserDetailLocalSourceImplTests.swift; sourceTree = "<group>"; };
 		D13A78272D26525C00882BF5 /* GitUserConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserConfigurationTests.swift; sourceTree = "<group>"; };
@@ -397,7 +398,6 @@
 		D1DD03292E16E5BC00148CE6 /* GitUserDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserDetailViewModelTests.swift; sourceTree = "<group>"; };
 		D1DD032A2E16E5BC00148CE6 /* GitUserListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserListViewModelTests.swift; sourceTree = "<group>"; };
 		D1DD032B2E16E5BC00148CE6 /* MockDispatchQueueProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDispatchQueueProvider.swift; sourceTree = "<group>"; };
-		D1DD03392E16F1D600148CE6 /* SampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTests.swift; sourceTree = "<group>"; };
 		D1E30CA82D9ACE5000AC7872 /* DesignSystem.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DesignSystem.plist; sourceTree = "<group>"; };
 		D1E30CAA2D9ACE5600AC7872 /* DesignSystemTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = DesignSystemTests.plist; sourceTree = "<group>"; };
 		D1E30CAC2D9ACE5D00AC7872 /* GitUserSample.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = GitUserSample.plist; sourceTree = "<group>"; };
@@ -517,14 +517,14 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
-		13B81037AC4CFE737699CFCD /* GitUserTests */ = {
+		13B81037AC4CFE737699CFCD /* iOSAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				485F624144DD38088C8CA763 /* Configurations */,
 				8A4D54FC44C7BBEDCF4316D7 /* Resources */,
 				7571FE74299F54A705547DB1 /* Sources */,
 			);
-			path = GitUserTests;
+			path = iOSAppTests;
 			sourceTree = "<group>";
 		};
 		1469CC7C99F3EEF118D326FF /* XCConfigs */ = {
@@ -777,7 +777,7 @@
 		7571FE74299F54A705547DB1 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D1DD03392E16F1D600148CE6 /* SampleTests.swift */,
+				D104DBD32E182B5C007D9A7A /* SampleTests.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -886,13 +886,13 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
-		AEBAA861E060DD6E2E9C23B9 /* GitUserKIFUITests */ = {
+		AEBAA861E060DD6E2E9C23B9 /* iOSAppKIFUITests */ = {
 			isa = PBXGroup;
 			children = (
 				891C55015CB06C97A3BF5199 /* Configurations */,
 				240AC2D62EEFD0BA4DD3C4A0 /* Sources */,
 			);
-			path = GitUserKIFUITests;
+			path = iOSAppKIFUITests;
 			sourceTree = "<group>";
 		};
 		B37DFAC6604180AF3C714CF9 /* NetworkAPI */ = {
@@ -1377,8 +1377,8 @@
 			children = (
 				20E4213B864F65C406E3904E /* Derived */,
 				DD6C7FBEA669F7360A3BB1A5 /* iOSApp */,
-				AEBAA861E060DD6E2E9C23B9 /* GitUserKIFUITests */,
-				13B81037AC4CFE737699CFCD /* GitUserTests */,
+				AEBAA861E060DD6E2E9C23B9 /* iOSAppKIFUITests */,
+				13B81037AC4CFE737699CFCD /* iOSAppTests */,
 				BD2C00351FF837F70D5E3310 /* Modules */,
 			);
 			name = Project;
@@ -1439,7 +1439,7 @@
 				AF5EA6D89332AC3AB095086E /* PBXTargetDependency */,
 			);
 			name = iOSAppKIFUITests;
-			productName = GitUserKIFUITests;
+			productName = iOSAppKIFUITests;
 			productReference = 1D639562C285077419837A8B /* iOSAppKIFUITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -1592,7 +1592,7 @@
 				ED9E1F92AE6A11D097F7764D /* PBXTargetDependency */,
 			);
 			name = iOSAppTests;
-			productName = GitUserTests;
+			productName = iOSAppTests;
 			productReference = A51FA1BCC5421E50043F2DFC /* iOSAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
@@ -1741,9 +1741,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSApp-iOSAppKIFUITests/Pods-iOSApp-iOSAppKIFUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSApp-iOSAppKIFUITests/Pods-iOSApp-iOSAppKIFUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1802,9 +1806,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DesignSystem-DesignSystemTests/Pods-DesignSystem-DesignSystemTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-DesignSystem-DesignSystemTests/Pods-DesignSystem-DesignSystemTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1837,9 +1845,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSAppTests/Pods-iOSAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSAppTests/Pods-iOSAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -1936,9 +1948,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-iOSApp/Pods-iOSApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2117,9 +2133,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GitUserSampleTests/Pods-GitUserSampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GitUserSampleTests/Pods-GitUserSampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2156,9 +2176,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Data-DataTests/Pods-Data-DataTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Data-DataTests/Pods-Data-DataTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2172,7 +2196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1DD033A2E16F21D00148CE6 /* SampleTests.swift in Sources */,
+				D104DBD42E182B5F007D9A7A /* SampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2400,7 +2424,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = GitUserTests/Configurations/Plists/Info.plist;
+				INFOPLIST_FILE = iOSAppTests/Configurations/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2424,7 +2448,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = GitUserTests/Configurations/Plists/Info.plist;
+				INFOPLIST_FILE = iOSAppTests/Configurations/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2448,7 +2472,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = GitUserKIFUITests/Configurations/Plists/Info.plist;
+				INFOPLIST_FILE = iOSAppKIFUITests/Configurations/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2473,7 +2497,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = GitUserTests/Configurations/Plists/Info.plist;
+				INFOPLIST_FILE = iOSAppTests/Configurations/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2498,7 +2522,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = GitUserTests/Configurations/Plists/Info.plist;
+				INFOPLIST_FILE = iOSAppTests/Configurations/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -2523,7 +2547,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = GitUserKIFUITests/Configurations/Plists/Info.plist;
+				INFOPLIST_FILE = iOSAppKIFUITests/Configurations/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3505,7 +3529,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = GitUserKIFUITests/Configurations/Plists/Info.plist;
+				INFOPLIST_FILE = iOSAppKIFUITests/Configurations/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -3589,7 +3613,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				INFOPLIST_FILE = GitUserKIFUITests/Configurations/Plists/Info.plist;
+				INFOPLIST_FILE = iOSAppKIFUITests/Configurations/Plists/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

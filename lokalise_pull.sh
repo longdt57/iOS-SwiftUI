@@ -9,7 +9,7 @@ PROJECT_ID=""
 
 # Pull translations from Lokalise
 unzip_folder="lokalise"
-resource_folder="GitUser/Resources"
+resource_folder="iOSApp/Resources"
 
 if ! command -v lokalise2 &> /dev/null; then
   echo "lokalise2 CLI not found, installing with Homebrew..."

@@ -18,7 +18,7 @@
                BlueprintIdentifier = "D102D6C42D99B27600FE5A50"
                BuildableName = "GitUserSample.framework"
                BlueprintName = "GitUserSample"
-               ReferencedContainer = "container:GitUser.xcodeproj">
+               ReferencedContainer = "container:iOSApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,15 +47,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D102D6C42D99B27600FE5A50"
-            BuildableName = "GitUserSample.framework"
-            BlueprintName = "GitUserSample"
-            ReferencedContainer = "container:GitUser.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug Production">

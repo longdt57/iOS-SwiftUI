@@ -17,7 +17,21 @@
                BlueprintIdentifier = "5E0CB565E9CAA5B32418D963"
                BuildableName = "Data.framework"
                BlueprintName = "Data"
-               ReferencedContainer = "container:GitUser.xcodeproj">
+               ReferencedContainer = "container:iOSApp.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9806E73F85C272986AC6BE5E"
+               BuildableName = "DataTests.xctest"
+               BlueprintName = "DataTests"
+               ReferencedContainer = "container:iOSApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,16 +42,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9806E73F85C272986AC6BE5E"
-               BuildableName = "DataTests.xctest"
-               BlueprintName = "DataTests"
-               ReferencedContainer = "container:GitUser.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,15 +54,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5E0CB565E9CAA5B32418D963"
-            BuildableName = "Data.framework"
-            BlueprintName = "Data"
-            ReferencedContainer = "container:GitUser.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release Production"
@@ -72,7 +67,7 @@
             BlueprintIdentifier = "5E0CB565E9CAA5B32418D963"
             BuildableName = "Data.framework"
             BlueprintName = "Data"
-            ReferencedContainer = "container:GitUser.xcodeproj">
+            ReferencedContainer = "container:iOSApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
