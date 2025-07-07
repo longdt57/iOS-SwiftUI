@@ -3,7 +3,7 @@ import SwiftUI
 import GitUserSample
 
 @main
-struct GitUserApp: App {
+struct iOSApp: App {
     var body: some Scene {
         WindowGroup {
             GitUserListScreen()
