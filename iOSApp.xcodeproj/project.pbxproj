@@ -112,7 +112,7 @@
 		D1E30CAF2D9ACE6400AC7872 /* GitUserSampleTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1E30CAE2D9ACE6400AC7872 /* GitUserSampleTests.plist */; };
 		D1F7A173060159C4BD809C77 /* Pods_DesignSystem_DesignSystemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616714FFD162F6A5397EB61B /* Pods_DesignSystem_DesignSystemTests.framework */; };
 		D6C90DCB5BD71F0F76B4FEAC /* Data.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DD0D5F9A6753827C2074981 /* Data.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		DA5CA649ECAA3E247A3B3C60 /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB50EA191ED0E7F0A6806D /* iOSApp.swift */; };
+		DA5CA649ECAA3E247A3B3C60 /* IOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6AB50EA191ED0E7F0A6806D /* IOSApp.swift */; };
 		EB327F9B7F27E0A2B49BC6AA /* Pods_GitUserSampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB67776FBA2A773FEF1E1282 /* Pods_GitUserSampleTests.framework */; };
 		ED18AD8D387CAFC126DCC41A /* NetworkAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F05CF29BC6CD4FFF76D970 /* NetworkAPI.swift */; };
 		F7627D238BF02375017366DA /* DummyRequestConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DD48FC89F35FAF92AFF7618 /* DummyRequestConfiguration.swift */; };
@@ -407,7 +407,7 @@
 		DE196B127EDCC772AE46548B /* KIFSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFSpec.swift; sourceTree = "<group>"; };
 		DF97EB44A0716D9B2509B207 /* Pods-Data.release production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Data.release production.xcconfig"; path = "Target Support Files/Pods-Data/Pods-Data.release production.xcconfig"; sourceTree = "<group>"; };
 		E1FE615B7B8E0CEC9D47E734 /* Pods-GitUserSample.debug staging.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitUserSample.debug staging.xcconfig"; path = "Target Support Files/Pods-GitUserSample/Pods-GitUserSample.debug staging.xcconfig"; sourceTree = "<group>"; };
-		E6AB50EA191ED0E7F0A6806D /* iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSApp.swift; sourceTree = "<group>"; };
+		E6AB50EA191ED0E7F0A6806D /* IOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSApp.swift; sourceTree = "<group>"; };
 		EB7602E3E53BCC03EA8F7343 /* iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F44C81A96DCADBC1BC3612C2 /* Pods-iOSAppTests.debug production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSAppTests.debug production.xcconfig"; path = "Target Support Files/Pods-iOSAppTests/Pods-iOSAppTests.debug production.xcconfig"; sourceTree = "<group>"; };
 		F4ECA67DDD8770852DE7611F /* DebugStaging.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DebugStaging.xcconfig; sourceTree = "<group>"; };
@@ -1396,7 +1396,7 @@
 		F9D2D861A0FCAFC58DA610E5 /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				E6AB50EA191ED0E7F0A6806D /* iOSApp.swift */,
+				E6AB50EA191ED0E7F0A6806D /* IOSApp.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -2225,7 +2225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA5CA649ECAA3E247A3B3C60 /* iOSApp.swift in Sources */,
+				DA5CA649ECAA3E247A3B3C60 /* IOSApp.swift in Sources */,
 				D18192752D243F86003103D1 /* Resolver+Injection.swift in Sources */,
 				D1DD031E2E16DDEF00148CE6 /* R.generated.swift in Sources */,
 			);
